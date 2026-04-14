@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="X4_GPS_RGBD_red">
+    <include>
+      <uri>model://X4_GPS_RGBD/base</uri>
+    </include>
+  </model>
+</sdf>
