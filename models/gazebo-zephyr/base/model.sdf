@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<sdf version="1.9">
+<sdf version="1.6">
   <model name="zephyr">
     <link name="wing">
       <inertial>
@@ -96,7 +96,7 @@
 
     </link>
     <link name="propeller">
-      <pose degrees="true">0 0.07 0.008 0 90 0</pose>
+      <pose>0 0.07 0.008 0 1.57079632679 0</pose>
       <inertial>
         <mass>.05</mass>
         <inertia>
@@ -260,8 +260,7 @@
         </inertia>
       </inertial>
       <sensor name="imu_sensor" type="imu">
-        <gz_frame_id>imu_link</gz_frame_id>
-        <pose degrees="true">0 0 0 180 0 -90</pose>
+        <pose>0 0 0 3.14159265359 0 -1.57079632679</pose>
         <always_on>1</always_on>
         <update_rate>1000.0</update_rate>
       </sensor>
@@ -280,7 +279,13 @@
         <dynamics>
           <damping>1.0</damping>
         </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+        </ode>
+      </physics>
     </joint>
   </model>
 </sdf>
