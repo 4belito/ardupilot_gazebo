@@ -110,7 +110,7 @@
       <visual name='base_link_visual'>
         <geometry>
           <mesh>
-            <uri>model://gazebo-iris/base/meshes/iris.dae</uri>
+            <uri>model://gazebo-iris/physics/meshes/iris.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -130,7 +130,7 @@
         </geometry>
         <material>
           <script>
-            <name>Gazebo/FlatBlack</name>
+            <name>Gazebo/{{ color | capitalize }}</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
@@ -145,7 +145,7 @@
         </geometry>
         <material>
           <script>
-            <name>Gazebo/FlatBlack</name>
+            <name>Gazebo/{{ color | capitalize }}</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
@@ -160,7 +160,7 @@
         </geometry>
         <material>
           <script>
-            <name>Gazebo/FlatBlack</name>
+            <name>Gazebo/{{ color | capitalize }}</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
@@ -175,7 +175,7 @@
         </geometry>
         <material>
           <script>
-            <name>Gazebo/FlatBlack</name>
+            <name>Gazebo/{{ color | capitalize }}</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
@@ -259,41 +259,6 @@
         </ode>
       </physics>
     </joint>
-<!--
-    <link name='iris/imugt_link'>
-      <pose>0 0 0 0 -0 0</pose>
-      <inertial>
-        <pose>0 0 0 0 -0 0</pose>
-        <mass>1e-02</mass>
-        <inertia>
-          <ixx>0.0002</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.0002</iyy>
-          <iyz>0</iyz>
-          <izz>0.0002</izz>
-        </inertia>
-      </inertial>
-    </link>
-    <joint name='iris/imugt_joint' type='revolute'>
-      <child>iris/imugt_link</child>
-      <parent>base_link</parent>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>0</lower>
-          <upper>0</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
--->
     <link name='rotor_0'>
       <pose>0.13 -0.22 0.023 0 -0 0</pose>
       <inertial>
@@ -330,12 +295,12 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://gazebo-iris/base/meshes/iris_prop_ccw.dae</uri>
+            <uri>model://gazebo-iris/physics/meshes/iris_prop_ccw.dae</uri>
           </mesh>
         </geometry>
         <material>
           <script>
-            <name>Gazebo/Red</name>
+            <name>Gazebo/{{ color | capitalize }}</name>
             <uri>__default__</uri>
           </script>
         </material>
@@ -400,12 +365,12 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://gazebo-iris/base/meshes/iris_prop_ccw.dae</uri>
+            <uri>model://gazebo-iris/physics/meshes/iris_prop_ccw.dae</uri>
           </mesh>
         </geometry>
         <material>
           <script>
-            <name>Gazebo/White</name>
+            <name>Gazebo/{{ color | capitalize }}</name>
             <uri>__default__</uri>
           </script>
         </material>
@@ -470,12 +435,12 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://gazebo-iris/base/meshes/iris_prop_cw.dae</uri>
+            <uri>model://gazebo-iris/physics/meshes/iris_prop_cw.dae</uri>
           </mesh>
         </geometry>
         <material>
           <script>
-            <name>Gazebo/Blue</name>
+            <name>Gazebo/{{ color | capitalize }}</name>
             <uri>__default__</uri>
           </script>
         </material>
@@ -540,12 +505,12 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://gazebo-iris/base/meshes/iris_prop_cw.dae</uri>
+            <uri>model://gazebo-iris/physics/meshes/iris_prop_cw.dae</uri>
           </mesh>
         </geometry>
         <material>
           <script>
-            <name>Gazebo/Blue</name>
+            <name>Gazebo/{{ color | capitalize }}</name>
             <uri>__default__</uri>
           </script>
         </material>

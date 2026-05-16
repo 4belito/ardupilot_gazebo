@@ -1,0 +1,15 @@
+material zephyr_wing_{{ color }}
+{
+    receive_shadows off
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture wing_{{ color }}.png
+                filtering trilinear
+            }
+        }
+    }
+}

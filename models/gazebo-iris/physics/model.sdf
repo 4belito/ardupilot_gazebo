@@ -110,7 +110,7 @@
       <visual name='base_link_visual'>
         <geometry>
           <mesh>
-            <uri>model://gazebo-iris/base/meshes/iris.dae</uri>
+            <uri>model://gazebo-iris/physics/meshes/iris.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -130,7 +130,7 @@
         </geometry>
         <material>
           <script>
-            <name>Gazebo/Black</name>
+            <name>Gazebo/FlatBlack</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
@@ -145,7 +145,7 @@
         </geometry>
         <material>
           <script>
-            <name>Gazebo/Black</name>
+            <name>Gazebo/FlatBlack</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
@@ -160,7 +160,7 @@
         </geometry>
         <material>
           <script>
-            <name>Gazebo/Black</name>
+            <name>Gazebo/FlatBlack</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
@@ -175,7 +175,7 @@
         </geometry>
         <material>
           <script>
-            <name>Gazebo/Black</name>
+            <name>Gazebo/FlatBlack</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
@@ -330,12 +330,12 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://gazebo-iris/base/meshes/iris_prop_ccw.dae</uri>
+            <uri>model://gazebo-iris/physics/meshes/iris_prop_ccw.dae</uri>
           </mesh>
         </geometry>
         <material>
           <script>
-            <name>Gazebo/Black</name>
+            <name>Gazebo/Red</name>
             <uri>__default__</uri>
           </script>
         </material>
@@ -400,12 +400,12 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://gazebo-iris/base/meshes/iris_prop_ccw.dae</uri>
+            <uri>model://gazebo-iris/physics/meshes/iris_prop_ccw.dae</uri>
           </mesh>
         </geometry>
         <material>
           <script>
-            <name>Gazebo/Black</name>
+            <name>Gazebo/White</name>
             <uri>__default__</uri>
           </script>
         </material>
@@ -470,12 +470,12 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://gazebo-iris/base/meshes/iris_prop_cw.dae</uri>
+            <uri>model://gazebo-iris/physics/meshes/iris_prop_cw.dae</uri>
           </mesh>
         </geometry>
         <material>
           <script>
-            <name>Gazebo/Black</name>
+            <name>Gazebo/Blue</name>
             <uri>__default__</uri>
           </script>
         </material>
@@ -540,12 +540,12 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://gazebo-iris/base/meshes/iris_prop_cw.dae</uri>
+            <uri>model://gazebo-iris/physics/meshes/iris_prop_cw.dae</uri>
           </mesh>
         </geometry>
         <material>
           <script>
-            <name>Gazebo/Black</name>
+            <name>Gazebo/Blue</name>
             <uri>__default__</uri>
           </script>
         </material>

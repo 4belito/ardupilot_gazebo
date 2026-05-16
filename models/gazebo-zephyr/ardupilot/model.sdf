@@ -4,7 +4,7 @@
     <pose>0 0 0 0 0 3.141593</pose>
 
     <include>
-      <uri>model://gazebo-zephyr/base</uri>
+      <uri>model://gazebo-zephyr/physics</uri>
       <pose>0 0 0.2 0 0 0</pose>
     </include>
 

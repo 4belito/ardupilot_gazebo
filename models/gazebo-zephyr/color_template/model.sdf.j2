@@ -17,18 +17,25 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://gazebo-zephyr/base/meshes/wing.dae</uri>
+            <uri>model://gazebo-zephyr/physics/meshes/wing.dae</uri>
             <submesh>
               <name>Wing</name>
               <center>true</center>
             </submesh>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <uri>model://gazebo-zephyr/{{ color }}/materials/scripts</uri>
+            <uri>model://gazebo-zephyr/physics/materials/textures</uri>
+            <name>zephyr_wing_{{ color }}</name>
+          </script>
+        </material>
       </visual>
       <collision name="body_collision">
         <geometry>
           <mesh>
-            <uri>model://gazebo-zephyr/base/meshes/wing.dae</uri>
+            <uri>model://gazebo-zephyr/physics/meshes/wing.dae</uri>
             <submesh>
               <name>Wing</name>
               <center>true</center>
@@ -53,7 +60,7 @@
         </geometry>
       </collision>
 
-      <!-- save center of pressure locations for debugging -->
+      <!-- center of pressure debug markers -->
       <visual name="cp_wing">
         <pose>0 -0.1 0.0 0 0 0</pose>
         <geometry>
@@ -111,13 +118,20 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://gazebo-zephyr/base/meshes/wing.dae</uri>
+            <uri>model://gazebo-zephyr/physics/meshes/wing.dae</uri>
             <submesh>
               <name>Propeller</name>
               <center>true</center>
             </submesh>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <uri>model://gazebo-zephyr/{{ color }}/materials/scripts</uri>
+            <uri>model://gazebo-zephyr/physics/materials/textures</uri>
+            <name>zephyr_wing_{{ color }}</name>
+          </script>
+        </material>
       </visual>
       <collision name="blade1">
         <pose>0 0 0.074205 0 0  0.3</pose>
@@ -153,13 +167,20 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://gazebo-zephyr/base/meshes/wing.dae</uri>
+            <uri>model://gazebo-zephyr/physics/meshes/wing.dae</uri>
             <submesh>
               <name>Flap_Left</name>
               <center>true</center>
             </submesh>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <uri>model://gazebo-zephyr/{{ color }}/materials/scripts</uri>
+            <uri>model://gazebo-zephyr/physics/materials/textures</uri>
+            <name>zephyr_wing_{{ color }}</name>
+          </script>
+        </material>
       </visual>
       <collision name="collision">
         <pose>-0.01 0.01 0 0 0 0.32445671</pose>
@@ -187,13 +208,20 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://gazebo-zephyr/base/meshes/wing.dae</uri>
+            <uri>model://gazebo-zephyr/physics/meshes/wing.dae</uri>
             <submesh>
               <name>Flap_Right</name>
               <center>true</center>
             </submesh>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <uri>model://gazebo-zephyr/{{ color }}/materials/scripts</uri>
+            <uri>model://gazebo-zephyr/physics/materials/textures</uri>
+            <name>zephyr_wing_{{ color }}</name>
+          </script>
+        </material>
       </visual>
       <collision name="collision">
         <pose>0.01 0.01 0 0 0 -0.32445671</pose>

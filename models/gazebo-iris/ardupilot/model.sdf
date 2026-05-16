@@ -2,7 +2,7 @@
 <sdf version="1.6" >
   <model name="iris_with_ardupilot">
     <include>
-      <uri>model://gazebo-iris/base</uri>
+      <uri>model://gazebo-iris/physics</uri>
     </include>
 
     <!-- plugins -->
